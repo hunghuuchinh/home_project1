@@ -2,9 +2,12 @@ source 'https://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.1.6'
+gem 'rails', '4.2.0'
 gem 'bootstrap-sass',  '3.2.0.0'
 gem 'bcrypt',           '3.1.9'
+gem 'faker',                   '1.4.2'
+gem 'will_paginate',           '3.0.7'
+gem 'bootstrap-will_paginate', '0.0.10'
 # Use sqlite3 as the database for Active Record
 
 # Use SCSS for stylesheets
@@ -29,7 +32,7 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',   '1.1.3'
 
 group :development, :test do
-  gem 'mysql',        '2.9.1'
+  gem 'mysql2',      '0.3.17'
   gem 'byebug',      '3.4.0'
   gem 'web-console', '2.0.0.beta3'
   gem 'spring',      '1.1.3'
@@ -42,7 +45,7 @@ group :test do
 end
 
 group :production do
-  gem 'mysql',            '2.9.1'
+  gem 'mysql2',           '0.3.17'
   gem 'rails_12factor',   '0.0.2'
   gem 'unicorn',          '4.8.3'
 end
